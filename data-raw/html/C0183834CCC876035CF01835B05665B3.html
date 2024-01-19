@@ -1,0 +1,6794 @@
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="height:99%" >
+	<head>
+		<title>Sistema de Informação em Vigilância Sanitária  (SIVISA)  1.1</title>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+		<meta http-equiv="content-language" content="pt-br" />
+		<meta http-equiv="accept-Language" content="pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4" />
+		
+		<meta name="copyright" content="CSEG - Centro de Sistemas EstratÃ©gicos de GestÃ£o, cseg@saude.sp.gov.br" />
+		<meta name="description" content="Sistema de Informação em Vigilância Sanitária  (SIVISA) " />
+		<meta name="robots" content="all"/>
+		<meta name="rating" content="general" />
+		
+
+ 
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/sivisa/fmk/css/estilo.css?versao=2.0.6.1.1705523096000"/>
+<link rel="stylesheet" type="text/css" href="/sivisa/fmk/css/jquery.datepick.css?versao=2.0.6.1.1705523096000"/>
+<link rel="stylesheet" type="text/css" href="/sivisa/css/projeto.css?versao=2.0.6.1.1705523096000"/>
+<link rel="stylesheet" type="text/css" href="/sivisa/fmk/css/displaytag.css?versao=2.0.6.1.1705523096000"/>
+<link rel="stylesheet" type="text/css" href="/sivisa/fmk/css/jquery.thickbox.css?versao=2.0.6.1.1705523096000" media="screen" />
+<link rel="stylesheet" type="text/css" href="/sivisa/fmk/css/jquery.alerts.css?versao=2.0.6.1.1705523096000" media="screen" />
+<link rel="stylesheet" type="text/css" href="/sivisa/fmk/css/jquery.jtip.css?versao=2.0.6.1.1705523096000" media="screen" />
+<link rel="stylesheet" type="text/css" href="/sivisa/fmk/css/jquery.simpleautocomplete.css?versao=2.0.6.1.1705523096000" media="screen" />
+
+<script language="javascript" src="/sivisa/fmk/js/jquery.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.autocomplete.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.simpleautocomplete.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.datepick.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.meiomask.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.multiselects.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.thickbox.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.alerts.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.price_format.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.cookie.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.jtip.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/jquery.bt.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/excanvas.compiled.js?versao=2.0.6.1.1705523096000"></script>
+
+
+<script language="javascript" src="/sivisa/fmk/js/framework.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/fmk/js/framework.validaformulario.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/js/projeto.js?versao=2.0.6.1.1705523096000"></script>
+<script language="javascript" src="/sivisa/js/ajuda.js?versao=2.0.6.1.1705523096000"></script>
+
+		
+		
+			
+				
+				
+					<script language="javascript" src="/sivisa/js/acessoCidadao.js?versao=2.0.6.1.1705523096000"></script>
+				
+			
+				
+					<script language="javascript" src="/sivisa/js/../fmk/js/jquery-ui.js?2.0.6&versao=2.0.6.1.1705523096000"></script>
+				
+				
+			
+		
+		
+		
+			
+				
+				
+					<link rel="stylesheet" type="text/css" href="/sivisa/css/acessoPublico.css?versao=2.0.6.1.1705523096000" media="screen" />
+				
+			
+				
+				
+					<link rel="stylesheet" type="text/css" href="/sivisa/css/cidadaoIndex.css?versao=2.0.6.1.1705523096000" media="screen" />
+				
+			
+				
+				
+					<link rel="stylesheet" type="text/css" href="/sivisa/css/jquery-ui.min.css?2.0.6?versao=2.0.6.1.1705523096000" media="screen" />
+				
+			
+				
+				
+					<link rel="stylesheet" type="text/css" href="/sivisa/css/jquery-ui.structure.min.css?2.0.6?versao=2.0.6.1.1705523096000" media="screen" />
+				
+			
+				
+				
+					<link rel="stylesheet" type="text/css" href="/sivisa/css/jquery-ui.theme.min.css?2.0.6?versao=2.0.6.1.1705523096000" media="screen" />
+				
+			
+				
+				
+					<link rel="stylesheet" type="text/css" href="/sivisa/css/cidadao-publico.css?2.0.6?versao=2.0.6.1.1705523096000" media="screen" />
+				
+			
+		
+
+	</head>
+<body topmargin="0" marginwidth="0" topmargin="0" leftmargin="0" marginheight="0" marginleft="0" style="height:99%" >
+
+<div id="pagina">
+	<div style="width: 100%;padding-bottom: 60px;margin:0 auto;">
+		
+	
+		
+		
+			
+		
+	
+	
+
+ 
+
+
+
+
+
+
+
+	
+
+ 
+
+
+
+
+
+
+
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  	
+
+
+
+	
+
+
+
+
+
+	<div class="lbTitulo">Consulta Estabelecimento
+		
+	</div>
+
+
+
+
+	<!-- carrega as variáveis de pesquisa -->
+	
+	
+
+ 
+
+
+
+
+
+
+
+
+
+<!--  campos obrigatórios -->
+
+
+<!--  campos obrigatórios -->
+
+
+<form action="/sivisa/cidadao/cidadaoLicenca.consultaEstabelecimento.logic" method="post" class=" " name="form_pesq_estab" id="form_pesq_estab">
+	<fieldset>
+
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<div id="" class="secao  " >
+	<h1 class="secaoTitulo">
+		
+		
+		Filtro de Pesquisa<!--cdLocalizacao="cevsSolicitacaoIdentificacao.estabelecimentoDados.estabelecimento.cpf"--> 
+			<span class='ajuda icone_ajuda_pequeno' style="float: right;margin-right: 4%;" onclick='ajuda.carrega("cevsSolicitacaoIdentificacao.estabelecimentoDados.estabelecimento.cpf", this);'></span>
+	</h1>
+	<div class=" secaoAbrirFechar">
+		
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  campos obrigatórios -->
+
+
+	
+
+<!--  disponível somente para leitura -->
+
+<!--  TIPO cpf -->
+
+	
+	
+	
+		
+	
+
+<!--  TIPO rg -->
+
+<!--  TIPO cep -->
+
+<!--  TIPO cnpj -->
+
+<!--  TIPO fone -->
+
+<!--  TIPO numerico -->
+
+<!--  TIPO numerico2 -->
+
+<!--  TIPO email -->
+
+<!--  TIPO temperatura -->
+
+<!--  TIPO moeda -->
+
+<!--  TIPO moeda8 -->
+
+<!--  TIPO ufesp -->
+
+<!--  TIPO peso -->
+
+<!--  TIPO altura -->
+
+<!--  tamanho padrão -->
+
+
+	
+		
+		
+			<label for="cevsSolicitacaoIdentificacaoestabelecimentoDadosestabelecimentocpf" id="_cevsSolicitacaoIdentificacaoestabelecimentoDadosestabelecimentocpf" class="">CPF:</label>
+		
+		
+		<!-- Situação -->
+		
+			<input style=";;;" autocomplete="" tipo="cpf" type="text" name="cevsSolicitacaoIdentificacao.estabelecimentoDados.estabelecimento.cpf" id="cevsSolicitacaoIdentificacaoestabelecimentoDadosestabelecimentocpf"   value=""
+				class="   cpf " size="17" maxlength="11"  />&nbsp;digite apenas números
+		
+	
+	
+
+
+	<br />
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  campos obrigatórios -->
+
+
+	
+
+<!--  disponível somente para leitura -->
+
+<!--  TIPO cpf -->
+
+<!--  TIPO rg -->
+
+<!--  TIPO cep -->
+
+<!--  TIPO cnpj -->
+
+	
+	
+	
+		
+	
+
+<!--  TIPO fone -->
+
+<!--  TIPO numerico -->
+
+<!--  TIPO numerico2 -->
+
+<!--  TIPO email -->
+
+<!--  TIPO temperatura -->
+
+<!--  TIPO moeda -->
+
+<!--  TIPO moeda8 -->
+
+<!--  TIPO ufesp -->
+
+<!--  TIPO peso -->
+
+<!--  TIPO altura -->
+
+<!--  tamanho padrão -->
+
+
+	
+		
+		
+			<label for="cevsSolicitacaoIdentificacaoestabelecimentoDadosestabelecimentocnpj" id="_cevsSolicitacaoIdentificacaoestabelecimentoDadosestabelecimentocnpj" class="">CNPJ:</label>
+		
+		
+		<!-- Situação -->
+		
+			<input style=";;;" autocomplete="" tipo="cnpj" type="text" name="cevsSolicitacaoIdentificacao.estabelecimentoDados.estabelecimento.cnpj" id="cevsSolicitacaoIdentificacaoestabelecimentoDadosestabelecimentocnpj"   value=""
+				class="   cnpj " size="25" maxlength="14"  />&nbsp;digite apenas números
+		
+	
+	
+
+
+	<br />
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  campos obrigatórios -->
+
+
+	
+
+<!--  disponível somente para leitura -->
+
+<!--  TIPO cpf -->
+
+<!--  TIPO rg -->
+
+<!--  TIPO cep -->
+
+<!--  TIPO cnpj -->
+
+<!--  TIPO fone -->
+
+<!--  TIPO numerico -->
+
+<!--  TIPO numerico2 -->
+
+<!--  TIPO email -->
+
+<!--  TIPO temperatura -->
+
+<!--  TIPO moeda -->
+
+<!--  TIPO moeda8 -->
+
+<!--  TIPO ufesp -->
+
+<!--  TIPO peso -->
+
+<!--  TIPO altura -->
+
+<!--  tamanho padrão -->
+
+	
+
+
+	
+		
+		
+			<label for="cevsSolicitacaoIdentificacaoestabelecimentoDadosestabelecimentorazaoSocialNome" id="_cevsSolicitacaoIdentificacaoestabelecimentoDadosestabelecimentorazaoSocialNome" class="">Razão social/nome:</label>
+		
+		
+		<!-- Situação -->
+		
+			<input style=";;;" autocomplete="" tipo="" type="text" name="cevsSolicitacaoIdentificacao.estabelecimentoDados.estabelecimento.razaoSocialNome" id="cevsSolicitacaoIdentificacaoestabelecimentoDadosestabelecimentorazaoSocialNome"   value=""
+				class="    inputuppercase" size="40" maxlength="200"  />&nbsp;
+		
+	
+	
+
+
+	<br />
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  campos obrigatórios -->
+
+
+	
+
+<!--  disponível somente para leitura -->
+
+<!--  TIPO cpf -->
+
+<!--  TIPO rg -->
+
+<!--  TIPO cep -->
+
+<!--  TIPO cnpj -->
+
+<!--  TIPO fone -->
+
+<!--  TIPO numerico -->
+
+<!--  TIPO numerico2 -->
+
+<!--  TIPO email -->
+
+<!--  TIPO temperatura -->
+
+<!--  TIPO moeda -->
+
+<!--  TIPO moeda8 -->
+
+<!--  TIPO ufesp -->
+
+<!--  TIPO peso -->
+
+<!--  TIPO altura -->
+
+<!--  tamanho padrão -->
+
+	
+
+
+	
+		
+		
+			<label for="cevsSolicitacaoIdentificacaoestabelecimentoDadosnomeFantasia" id="_cevsSolicitacaoIdentificacaoestabelecimentoDadosnomeFantasia" class="">Nome Fantasia:</label>
+		
+		
+		<!-- Situação -->
+		
+			<input style=";;;" autocomplete="" tipo="" type="text" name="cevsSolicitacaoIdentificacao.estabelecimentoDados.nomeFantasia" id="cevsSolicitacaoIdentificacaoestabelecimentoDadosnomeFantasia"   value=""
+				class="    inputuppercase" size="40" maxlength="200"  />&nbsp;
+		
+	
+	
+
+
+	<br />
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- campos obrigatórios -->
+
+	
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	<label for="Município:" id="_ibge_codigo"  class="obrigatorio">Município:*</label>
+
+
+
+<!-- monta o combo -->
+<select  id="ibge_codigo"  name="ibge_codigo" class="obrigatorio "  >
+		<option id="ibge_codigo_0" value="">[ selecione uma opção ]</option>
+	
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350010" value="350010"   >ADAMANTINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350020" value="350020"   >ADOLFO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350030" value="350030"   >AGUAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350040" value="350040"   >ÁGUAS DA PRATA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350050" value="350050"   >ÁGUAS DE LINDÓIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350055" value="350055"   >ÁGUAS DE SANTA BARBARA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350060" value="350060"   >ÁGUAS DE SÃO PEDRO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350070" value="350070"   >AGUDOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350075" value="350075"   >ALAMBARÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350080" value="350080"   >ALFREDO MARCONDES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350090" value="350090"   >ALTAIR</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350100" value="350100"   >ALTINÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350110" value="350110"   >ALTO ALEGRE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350115" value="350115"   >ALUMÍNIO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350120" value="350120"   >ALVARES FLORENCE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350130" value="350130"   >ALVARES MACHADO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350140" value="350140"   >ALVARO DE CARVALHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350150" value="350150"   >ALVINLÂNDIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350160" value="350160"   >AMERICANA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350170" value="350170"   >AMÉRICO BRASILIENSE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350180" value="350180"   >AMÉRICO DE CAMPOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350190" value="350190"   >AMPARO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350200" value="350200"   >ANALÂNDIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350210" value="350210"   >ANDRADINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350220" value="350220"   >ANGATUBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350230" value="350230"   >ANHEMBI</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350240" value="350240"   >ANHUMAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350250" value="350250"   >APARECIDA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350260" value="350260"   >APARECIDA D'OESTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350270" value="350270"   >APIAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350275" value="350275"   >ARACARIGUAMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350280" value="350280"   >ARAÇATUBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350290" value="350290"   >ARAÇOIABA DA SERRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350300" value="350300"   >ARAMINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350310" value="350310"   >ARANDÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350315" value="350315"   >ARAPEÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350320" value="350320"   >ARARAQUARA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350330" value="350330"   >ARARAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350335" value="350335"   >ARCO-IRIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350340" value="350340"   >AREALVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350350" value="350350"   >AREIAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350360" value="350360"   >AREIÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350370" value="350370"   >ARIRANHA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350380" value="350380"   >ARTUR NOGUEIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350390" value="350390"   >ARUJÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350395" value="350395"   >ASPÁSIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350400" value="350400"   >ASSIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350410" value="350410"   >ATIBAIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350420" value="350420"   >AURIFLAMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350430" value="350430"   >AVAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350440" value="350440"   >AVANHANDAVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350450" value="350450"   >AVARÉ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350460" value="350460"   >BADY BASSITT</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350470" value="350470"   >BALBINOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350480" value="350480"   >BALSAMO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350490" value="350490"   >BANANAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350500" value="350500"   >BARÃO DE ANTONINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350510" value="350510"   >BARBOSA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350520" value="350520"   >BARIRÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350530" value="350530"   >BARRA BONITA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350535" value="350535"   >BARRA DO CHAPÉU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350540" value="350540"   >BARRA DO TURVO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350550" value="350550"   >BARRETOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350560" value="350560"   >BARRINHA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350570" value="350570"   >BARUERÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350580" value="350580"   >BASTOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350590" value="350590"   >BATATAIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350600" value="350600"   >BAURU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350610" value="350610"   >BEBEDOURO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350620" value="350620"   >BENTO DE ABREU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350630" value="350630"   >BERNARDINO DE CAMPOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350635" value="350635"   >BERTIOGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350640" value="350640"   >BILAC</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350650" value="350650"   >BIRIGUÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350660" value="350660"   >BIRITIBA MIRIM</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350670" value="350670"   >BOA ESPERANÇA DO SUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350680" value="350680"   >BOCAINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350690" value="350690"   >BOFETE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350700" value="350700"   >BOITUVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350710" value="350710"   >BOM JESUS DOS PERDOES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350715" value="350715"   >BOM SUCESSO DE ITARARÉ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350720" value="350720"   >BORA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350730" value="350730"   >BORACÉIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350740" value="350740"   >BORBOREMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350745" value="350745"   >BOREBÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350750" value="350750"   >BOTUCATU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350760" value="350760"   >BRAGANÇA PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350770" value="350770"   >BRAÚNA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350775" value="350775"   >BREJO ALEGRE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350780" value="350780"   >BRODOWSKI</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350790" value="350790"   >BROTAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350800" value="350800"   >BURÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350810" value="350810"   >BURITAMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350820" value="350820"   >BURITIZAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350830" value="350830"   >CABRÁLIA PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350840" value="350840"   >CABREUVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350850" value="350850"   >CAÇAPAVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350860" value="350860"   >CACHOEIRA PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350870" value="350870"   >CACONDE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350880" value="350880"   >CAFELÂNDIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350890" value="350890"   >CAIABÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350900" value="350900"   >CAIEIRAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350910" value="350910"   >CAIUÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350920" value="350920"   >CAJAMAR</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350925" value="350925"   >CAJATÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350930" value="350930"   >CAJOBÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350940" value="350940"   >CAJURÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350945" value="350945"   >CAMPINA DO MONTE ALEGRE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350950" value="350950"   >CAMPINAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350960" value="350960"   >CAMPO LIMPO PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350970" value="350970"   >CAMPOS DO JORDÃO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350980" value="350980"   >CAMPOS NOVOS PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350990" value="350990"   >CANANÉIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_350995" value="350995"   >CANAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351000" value="351000"   >CÂNDIDO MOTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351010" value="351010"   >CÂNDIDO RODRIGUES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351015" value="351015"   >CANITAR</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351020" value="351020"   >CAPÃO BONITO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351030" value="351030"   >CAPELA DO ALTO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351040" value="351040"   >CAPIVARÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351050" value="351050"   >CARAGUATATUBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351060" value="351060"   >CARAPICUIBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351070" value="351070"   >CARDOSO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351080" value="351080"   >CASA BRANCA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351090" value="351090"   >CÁSSIA DOS COQUEIROS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351100" value="351100"   >CASTILHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351110" value="351110"   >CATANDUVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351120" value="351120"   >CATIGUÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351130" value="351130"   >CEDRAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351140" value="351140"   >CERQUEIRA CÉSAR</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351150" value="351150"   >CERQUILHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351160" value="351160"   >CESÁRIO LANGE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351170" value="351170"   >CHARQUEADA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355720" value="355720"   >CHAVANTES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351190" value="351190"   >CLEMENTINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351200" value="351200"   >COLINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351210" value="351210"   >COLÔMBIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351220" value="351220"   >CONCHAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351230" value="351230"   >CONCHAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351240" value="351240"   >CORDEIROPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351250" value="351250"   >COROADOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351260" value="351260"   >CORONEL MACEDO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351270" value="351270"   >CORUMBATAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351280" value="351280"   >COSMOPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351290" value="351290"   >COSMORAMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351300" value="351300"   >COTIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351310" value="351310"   >CRAVINHOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351320" value="351320"   >CRISTAIS PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351330" value="351330"   >CRUZALIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351340" value="351340"   >CRUZEIRO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351350" value="351350"   >CUBATAO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351360" value="351360"   >CUNHA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351370" value="351370"   >DESCALVADO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351380" value="351380"   >DIADEMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351385" value="351385"   >DIRCE REIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351390" value="351390"   >DIVINOLÂNDIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351400" value="351400"   >DOBRADA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351410" value="351410"   >DOIS CÓRREGOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351420" value="351420"   >DOLCINÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351430" value="351430"   >DOURADO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351440" value="351440"   >DRACENA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351450" value="351450"   >DUARTINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351460" value="351460"   >DUMONT</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351470" value="351470"   >ECHAPORÃ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351480" value="351480"   >ELDORADO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351490" value="351490"   >ELIAS FAUSTO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351492" value="351492"   >ELISIÁRIO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351495" value="351495"   >EMBAÚBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351500" value="351500"   >EMBU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351510" value="351510"   >EMBU-GUAÇU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351512" value="351512"   >EMILIANÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351515" value="351515"   >ENGENHEIRO COELHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351518" value="351518"   >ESPÍRITO SANTO DO PINHAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351519" value="351519"   >ESPÍRITO SANTO DO TURVO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355730" value="355730"   >ESTIVA GERBI</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351530" value="351530"   >ESTRELA DO NORTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351520" value="351520"   >ESTRELA D'OESTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351535" value="351535"   >EUCLIDES DA CUNHA PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351540" value="351540"   >FARTURA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351560" value="351560"   >FERNANDO PRESTES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351550" value="351550"   >FERNANDOPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351565" value="351565"   >FERNÃO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351570" value="351570"   >FERRAZ DE VASCONCELOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351580" value="351580"   >FLORA RICA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351590" value="351590"   >FLOREAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351600" value="351600"   >FLORIDA PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351610" value="351610"   >FLORÍNIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351620" value="351620"   >FRANCA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351630" value="351630"   >FRANCISCO MORATO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351640" value="351640"   >FRANCO DA ROCHA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351650" value="351650"   >GABRIEL MONTEIRO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351660" value="351660"   >GÁLIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351670" value="351670"   >GARÇA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351680" value="351680"   >GASTÃO VIDIGAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351685" value="351685"   >GAVIÃO PEIXOTO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351690" value="351690"   >GENERAL SALGADO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351700" value="351700"   >GETULINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351710" value="351710"   >GLICÉRIO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351720" value="351720"   >GUAIÇARA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351730" value="351730"   >GUAIMBÉ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351740" value="351740"   >GUAÍRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351750" value="351750"   >GUAPIAÇU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351760" value="351760"   >GUAPIARA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351770" value="351770"   >GUARÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351780" value="351780"   >GUARAÇAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351790" value="351790"   >GUARACÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351800" value="351800"   >GUARANI D'OESTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351810" value="351810"   >GUARANTÃ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351820" value="351820"   >GUARARAPES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351830" value="351830"   >GUARAREMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351840" value="351840"   >GUARATINGUETA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351850" value="351850"   >GUAREÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351860" value="351860"   >GUARIBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351870" value="351870"   >GUARUJÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351880" value="351880"   >GUARULHOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351885" value="351885"   >GUATAPARÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351890" value="351890"   >GUZOLÂNDIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351900" value="351900"   >HERCULÂNDIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351905" value="351905"   >HOLAMBRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351907" value="351907"   >HORTOLÂNDIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351910" value="351910"   >IACANGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351920" value="351920"   >IACRI</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351925" value="351925"   >IARAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351930" value="351930"   >IBATÉ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351940" value="351940"   >IBIRÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351950" value="351950"   >IBIRAREMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351960" value="351960"   >IBITINGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351970" value="351970"   >IBIUNA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351980" value="351980"   >ICEM</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_351990" value="351990"   >IEPÉ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352000" value="352000"   >IGARAÇU DO TIETÊ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352010" value="352010"   >IGARAPAVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352020" value="352020"   >IGARATÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352030" value="352030"   >IGUAPE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352042" value="352042"   >ILHA COMPRIDA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352044" value="352044"   >ILHA SOLTEIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352040" value="352040"   >ILHABELA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352050" value="352050"   >INDAIATUBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352060" value="352060"   >INDIANA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352070" value="352070"   >INDIAPORA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352080" value="352080"   >INUBIA PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352090" value="352090"   >IPAUSSU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352100" value="352100"   >IPERO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352110" value="352110"   >IPEÚNA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352115" value="352115"   >IPIGUÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352120" value="352120"   >IPORANGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352130" value="352130"   >IPUÃ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352140" value="352140"   >IRACEMAPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352150" value="352150"   >IRAPUÃ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352160" value="352160"   >IRAPURU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352170" value="352170"   >ITABERA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352180" value="352180"   >ITAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352190" value="352190"   >ITAJOBÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352200" value="352200"   >ITAJÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352210" value="352210"   >ITANHAEM</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352215" value="352215"   >ITAOCA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352220" value="352220"   >ITAPECERICA DA SERRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352230" value="352230"   >ITAPETININGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352240" value="352240"   >ITAPEVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352250" value="352250"   >ITAPEVÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352260" value="352260"   >ITAPIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352265" value="352265"   >ITAPIRAPUA PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352270" value="352270"   >ITÁPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352280" value="352280"   >ITAPORANGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352290" value="352290"   >ITAPUÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352300" value="352300"   >ITAPURA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352310" value="352310"   >ITAQUAQUECETUBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352320" value="352320"   >ITARARÉ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352330" value="352330"   >ITARIRÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352340" value="352340"   >ITATIBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352350" value="352350"   >ITATINGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352360" value="352360"   >ITIRAPINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352370" value="352370"   >ITIRAPUA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352380" value="352380"   >ITOBÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352390" value="352390"   >ITÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352400" value="352400"   >ITUPEVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352410" value="352410"   >ITUVERAVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352420" value="352420"   >JABORANDÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352430" value="352430"   >JABOTICABAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352440" value="352440"   >JACAREÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352450" value="352450"   >JACÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352460" value="352460"   >JACUPIRANGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352470" value="352470"   >JAGUARIUNA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352480" value="352480"   >JALES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352490" value="352490"   >JAMBEIRO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352500" value="352500"   >JANDIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352510" value="352510"   >JARDINÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352520" value="352520"   >JARINÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352530" value="352530"   >JAÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352540" value="352540"   >JERIQUARA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352550" value="352550"   >JOANÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352560" value="352560"   >JOÃO RAMALHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352570" value="352570"   >JOSÉ BONIFÁCIO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352580" value="352580"   >JÚLIO MESQUITA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352585" value="352585"   >JUMIRIM</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352590" value="352590"   >JUNDIAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352600" value="352600"   >JUNQUEIRÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352610" value="352610"   >JUQUIÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352620" value="352620"   >JUQUITIBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352630" value="352630"   >LAGOINHA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352640" value="352640"   >LARANJAL PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352650" value="352650"   >LAVINIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352660" value="352660"   >LAVRINHAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352670" value="352670"   >LEME</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352680" value="352680"   >LENÇÓIS PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352690" value="352690"   >LIMEIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352700" value="352700"   >LINDÓIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352710" value="352710"   >LINS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352720" value="352720"   >LORENA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352725" value="352725"   >LOURDES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352730" value="352730"   >LOUVEIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352740" value="352740"   >LUCÉLIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352750" value="352750"   >LUCIANÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352760" value="352760"   >LUÍS ANTÔNIO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352770" value="352770"   >LUIZIÂNIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352780" value="352780"   >LUPÉRCIO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352790" value="352790"   >LUTÉCIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352800" value="352800"   >MACATUBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352810" value="352810"   >MACAÚBAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352820" value="352820"   >MACEDONIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352830" value="352830"   >MAGDA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352840" value="352840"   >MAIRINQUE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352850" value="352850"   >MAIRIPORA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352860" value="352860"   >MANDURI</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352870" value="352870"   >MARABÁ PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352880" value="352880"   >MARACAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352885" value="352885"   >MARAPOAMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352890" value="352890"   >MARIAPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352900" value="352900"   >MARILIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352910" value="352910"   >MARINÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352920" value="352920"   >MARTINÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352930" value="352930"   >MATAO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352940" value="352940"   >MAUÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352950" value="352950"   >MENDONÇA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352960" value="352960"   >MERIDIANO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352965" value="352965"   >MESÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352970" value="352970"   >MIGUELÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352980" value="352980"   >MINEIROS DO TIETÊ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353000" value="353000"   >MIRA ESTRELA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_352990" value="352990"   >MIRACATÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353010" value="353010"   >MIRANDÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353020" value="353020"   >MIRANTE DO PARANAPANEMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353030" value="353030"   >MIRASSOL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353040" value="353040"   >MIRASSOLÂNDIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353050" value="353050"   >MOCOCA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353060" value="353060"   >MOGÍ DAS CRUZES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353070" value="353070"   >MOGÍ GUAÇU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353080" value="353080"   >MOGI MIRIM</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353090" value="353090"   >MOMBUCA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353100" value="353100"   >MONÇOES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353110" value="353110"   >MONGÁGUA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353120" value="353120"   >MONTE ALEGRE DO SUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353130" value="353130"   >MONTE ALTO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353140" value="353140"   >MONTE APRAZÍVEL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353150" value="353150"   >MONTE AZUL PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353160" value="353160"   >MONTE CASTELO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353180" value="353180"   >MONTE MOR</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353170" value="353170"   >MONTEIRO LOBATO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353190" value="353190"   >MORRO AGUDO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353200" value="353200"   >MORUNGABA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353205" value="353205"   >MOTUCA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353210" value="353210"   >MURUTINGA DO SUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353215" value="353215"   >NANTES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353220" value="353220"   >NARANDIBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353230" value="353230"   >NATIVIDADE DA SERRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353240" value="353240"   >NAZARÉ PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353250" value="353250"   >NEVES PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353260" value="353260"   >NHANDEARA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353270" value="353270"   >NIPOA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353280" value="353280"   >NOVA ALIANÇA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353282" value="353282"   >NOVA CAMPINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353284" value="353284"   >NOVA CANAA PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353286" value="353286"   >NOVA CASTILHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353290" value="353290"   >NOVA EUROPA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353300" value="353300"   >NOVA GRANADA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353310" value="353310"   >NOVA GUATAPORANGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353320" value="353320"   >NOVA INDEPENDÊNCIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353330" value="353330"   >NOVA LUZITÂNIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353340" value="353340"   >NOVA ODESSA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353325" value="353325"   >NOVAIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353350" value="353350"   >NOVO HORIZONTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353360" value="353360"   >NUPORANGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353370" value="353370"   >OCAUCÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353380" value="353380"   >ÓLEO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353390" value="353390"   >OLÍMPIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353400" value="353400"   >ONDA VERDE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353410" value="353410"   >ORIENTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353420" value="353420"   >ORINDIUVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353430" value="353430"   >ORLÂNDIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353440" value="353440"   >OSASCO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353450" value="353450"   >OSCAR BRESSANE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353460" value="353460"   >OSVALDO CRUZ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353470" value="353470"   >OURINHOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353480" value="353480"   >OURO VERDE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353475" value="353475"   >OUROESTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353490" value="353490"   >PACAEMBU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353500" value="353500"   >PALESTINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353510" value="353510"   >PALMARES PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353520" value="353520"   >PALMEIRA D'OESTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353530" value="353530"   >PALMITAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353540" value="353540"   >PANORAMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353550" value="353550"   >PARÁGUAÇU PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353560" value="353560"   >PARAIBUNA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353570" value="353570"   >PARAÍSO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353580" value="353580"   >PARANAPANEMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353590" value="353590"   >PARANAPUA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353600" value="353600"   >PARAPUA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353610" value="353610"   >PARDINHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353620" value="353620"   >PARIQUERA-AÇU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353625" value="353625"   >PARISI</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353630" value="353630"   >PATROCÍNIO PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353640" value="353640"   >PAULICÉIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353650" value="353650"   >PAULINIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353657" value="353657"   >PAULISTÂNIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353660" value="353660"   >PAULO DE FARIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353670" value="353670"   >PEDERNEIRAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353680" value="353680"   >PEDRA BELA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353690" value="353690"   >PEDRANÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353700" value="353700"   >PEDREGULHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353710" value="353710"   >PEDREIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353715" value="353715"   >PEDRINHAS PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353720" value="353720"   >PEDRO DE TOLEDO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353730" value="353730"   >PENAPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353740" value="353740"   >PEREIRA BARRETO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353750" value="353750"   >PEREIRAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353760" value="353760"   >PERUIBE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353770" value="353770"   >PIACATU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353780" value="353780"   >PIEDADE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353790" value="353790"   >PILAR DO SUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353800" value="353800"   >PINDAMONHANGABA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353810" value="353810"   >PINDORAMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353820" value="353820"   >PINHALZINHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353830" value="353830"   >PIQUEROBÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353850" value="353850"   >PIQUETE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353860" value="353860"   >PIRACAÍA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353870" value="353870"   >PIRACICABA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353880" value="353880"   >PIRAJU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353890" value="353890"   >PIRAJUÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353900" value="353900"   >PIRANGÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353910" value="353910"   >PIRAPORA DO BOM JESUS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353920" value="353920"   >PIRAPOZINHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353930" value="353930"   >PIRASSUNUNGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353940" value="353940"   >PIRATININGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353950" value="353950"   >PITANGUEIRAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353960" value="353960"   >PLANALTO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353970" value="353970"   >PLATINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353980" value="353980"   >POA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_353990" value="353990"   >POLONI</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354000" value="354000"   >POMPÉIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354010" value="354010"   >PONGAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354020" value="354020"   >PONTAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354025" value="354025"   >PONTALINDA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354030" value="354030"   >PONTES GESTAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354040" value="354040"   >POPULINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354050" value="354050"   >PORANGABA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354060" value="354060"   >PORTO FELIZ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354070" value="354070"   >PORTO FERREIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354075" value="354075"   >POTIM</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354080" value="354080"   >POTIRENDABA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354085" value="354085"   >PRACINHA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354090" value="354090"   >PRADÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354100" value="354100"   >PRAIA GRANDE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354105" value="354105"   >PRATÂNIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354110" value="354110"   >PRESIDENTE ALVES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354120" value="354120"   >PRESIDENTE BERNARDES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354130" value="354130"   >PRESIDENTE EPITÁCIO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354140" value="354140"   >PRESIDENTE PRUDENTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354150" value="354150"   >PRESIDENTE VENCESLAU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354160" value="354160"   >PROMISSÃO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354165" value="354165"   >QUADRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354170" value="354170"   >QUATÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354180" value="354180"   >QUEIROZ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354190" value="354190"   >QUELUZ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354200" value="354200"   >QUINTANA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354210" value="354210"   >RAFARD</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354220" value="354220"   >RANCHARIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354230" value="354230"   >REDENÇÃO DA SERRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354240" value="354240"   >REGENTE FEIJÓ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354250" value="354250"   >REGINÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354260" value="354260"   >REGISTRO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354270" value="354270"   >RESTINGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354280" value="354280"   >RIBEIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354290" value="354290"   >RIBEIRÃO BONITO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354300" value="354300"   >RIBEIRÃO BRANCO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354310" value="354310"   >RIBEIRÃO CORRENTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354320" value="354320"   >RIBEIRÃO DO SUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354323" value="354323"   >RIBEIRÃO DOS INDIOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354325" value="354325"   >RIBEIRÃO GRANDE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354330" value="354330"   >RIBEIRÃO PIRES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354340" value="354340"   >RIBEIRÃO PRETO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354360" value="354360"   >RIFAINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354370" value="354370"   >RINCAO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354380" value="354380"   >RINÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354390" value="354390"   >RIO CLARO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354400" value="354400"   >RIO DAS PEDRAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354410" value="354410"   >RIO GRANDE DA SERRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354420" value="354420"   >RIOLÂNDIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354350" value="354350"   >RIVERSUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354425" value="354425"   >ROSANA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354430" value="354430"   >ROSEIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354440" value="354440"   >RUBIACÉA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354450" value="354450"   >RUBINÉIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354460" value="354460"   >SABINO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354470" value="354470"   >SAGRES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354480" value="354480"   >SALES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354490" value="354490"   >SALES OLIVEIRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354500" value="354500"   >SALESÓPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354510" value="354510"   >SALMOURAO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354515" value="354515"   >SALTINHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354520" value="354520"   >SALTO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354530" value="354530"   >SALTO DE PIRAPORA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354540" value="354540"   >SALTO GRANDE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354550" value="354550"   >SANDOVALINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354560" value="354560"   >SANTA ADÉLIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354570" value="354570"   >SANTA ALBERTINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354580" value="354580"   >SANTA BARBARA D´OESTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354600" value="354600"   >SANTA BRANCA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354610" value="354610"   >SANTA CLARA D'OESTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354620" value="354620"   >SANTA CRUZ DA CONCEIÇÃO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354625" value="354625"   >SANTA CRUZ DA ESPERANÇA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354630" value="354630"   >SANTA CRUZ DAS PALMEIRAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354640" value="354640"   >SANTA CRUZ DO RIO PARDO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354650" value="354650"   >SANTA ERNESTINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354660" value="354660"   >SANTA FÉ DO SUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354670" value="354670"   >SANTA GERTRUDES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354680" value="354680"   >SANTA ISABEL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354690" value="354690"   >SANTA LÚCIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354700" value="354700"   >SANTA MARIA DA SERRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354710" value="354710"   >SANTA MERCEDES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354750" value="354750"   >SANTA RITA DO PASSA QUATRO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354740" value="354740"   >SANTA RITA D'OESTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354760" value="354760"   >SANTA ROSA DE VITERBO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354765" value="354765"   >SANTA SALETE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354720" value="354720"   >SANTANA DA PONTE PENSA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354730" value="354730"   >SANTANA DE PARNAÍBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354770" value="354770"   >SANTO ANASTÁCIO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354780" value="354780"   >SANTO ANDRÉ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354790" value="354790"   >SANTO ANTÔNIO DA ALEGRIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354800" value="354800"   >SANTO ANTÔNIO DE POSSE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354805" value="354805"   >SANTO ANTÔNIO DO ARACANGUÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354810" value="354810"   >SANTO ANTÔNIO DO JARDIM</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354820" value="354820"   >SANTO ANTÔNIO DO PINHAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354830" value="354830"   >SANTO EXPEDITO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354840" value="354840"   >SANTÓPOLIS DO AGUAPEÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354850" value="354850"   >SANTOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354860" value="354860"   >SÃO BENTO DO SAPUCAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354870" value="354870"   >SÃO BERNARDO DO CAMPO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354880" value="354880"   >SÃO CAETANO DO SUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354890" value="354890"   >SÃO CARLOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354900" value="354900"   >SÃO FRANCISCO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354910" value="354910"   >SÃO JOÃO DA BOA VISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354920" value="354920"   >SÃO JOÃO DAS DUAS PONTES</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354925" value="354925"   >SÃO JOÃO DE IRACEMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354930" value="354930"   >SÃO JOÃO DO PAU D'ALHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354940" value="354940"   >SÃO JOAQUIM DA BARRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354950" value="354950"   >SÃO JOSÉ DA BELA VISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354960" value="354960"   >SÃO JOSÉ DO BARREIRO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354970" value="354970"   >SÃO JOSÉ DO RIO PARDO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354980" value="354980"   >SÃO JOSÉ DO RIO PRETO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354990" value="354990"   >SÃO JOSÉ DOS CAMPOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_354995" value="354995"   >SÃO LOURENÇO DA SERRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355000" value="355000"   >SÃO LUÍS DO PARAITINGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355010" value="355010"   >SÃO MANUEL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355020" value="355020"   >SÃO MIGUEL ARCANJO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355030" value="355030"   >SÃO PAULO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355040" value="355040"   >SÃO PEDRO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355050" value="355050"   >SÃO PEDRO DO TURVO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355060" value="355060"   >SÃO ROQUE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355070" value="355070"   >SÃO SEBASTIÃO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355080" value="355080"   >SÃO SEBASTIÃO DA GRAMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355090" value="355090"   >SÃO SIMÃO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355100" value="355100"   >SÃO VICENTE</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355110" value="355110"   >SARAPUÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355120" value="355120"   >SARUTAIÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355130" value="355130"   >SEBASTIANÓPOLIS DO SUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355140" value="355140"   >SERRA AZUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355160" value="355160"   >SERRA NEGRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355150" value="355150"   >SERRANA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355170" value="355170"   >SERTAOZINHO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355180" value="355180"   >SETE BARRAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355190" value="355190"   >SEVERÍNIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355200" value="355200"   >SILVEIRAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355210" value="355210"   >SOCORRO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355220" value="355220"   >SOROCABA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355230" value="355230"   >SUD MENNUCCI</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355240" value="355240"   >SUMARÉ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355255" value="355255"   >SUZANAPOLIS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355250" value="355250"   >SUZANO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355260" value="355260"   >TABAPUA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355270" value="355270"   >TABATINGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355280" value="355280"   >TABOAO DA SERRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355290" value="355290"   >TACIBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355300" value="355300"   >TAGUAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355310" value="355310"   >TAIAÇU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355320" value="355320"   >TAIUVA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355330" value="355330"   >TAMBAÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355340" value="355340"   >TANABÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355350" value="355350"   >TAPIRAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355360" value="355360"   >TAPIRATIBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355365" value="355365"   >TAQUARAL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355370" value="355370"   >TAQUARITINGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355380" value="355380"   >TAQUARITUBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355385" value="355385"   >TAQUARIVAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355390" value="355390"   >TARABAÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355395" value="355395"   >TARUMA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355400" value="355400"   >TATUÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355410" value="355410"   >TAUBATÉ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355420" value="355420"   >TEJUPA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355430" value="355430"   >TEODORO SAMPAIO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355440" value="355440"   >TERRA ROXA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355450" value="355450"   >TIETÊ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355460" value="355460"   >TIMBURÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355465" value="355465"   >TORRE DE PEDRA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355470" value="355470"   >TORRINHA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355475" value="355475"   >TRABIJÚ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355480" value="355480"   >TREMEMBÉ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355490" value="355490"   >TRÊS FRONTEIRAS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355495" value="355495"   >TUIUTÍ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355500" value="355500"   >TUPA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355510" value="355510"   >TUPI PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355520" value="355520"   >TURIUBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355530" value="355530"   >TURMALINA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355535" value="355535"   >UBARANÁ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355540" value="355540"   >UBATUBA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355550" value="355550"   >UBIRAJARA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355560" value="355560"   >UCHÔA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355570" value="355570"   >UNIÃO PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355580" value="355580"   >URÂNIA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355590" value="355590"   >URU</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355600" value="355600"   >URUPÉS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355610" value="355610"   >VALENTIM GENTIL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355620" value="355620"   >VALINHOS</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355630" value="355630"   >VALPARAÍSO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355635" value="355635"   >VARGEM</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355640" value="355640"   >VARGEM GRANDE DO SUL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355645" value="355645"   >VARGEM GRANDE PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355650" value="355650"   >VÁRZEA PAULISTA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355660" value="355660"   >VERA CRUZ</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355670" value="355670"   >VINHEDO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355680" value="355680"   >VIRADOURO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355690" value="355690"   >VISTA ALEGRE DO ALTO</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355695" value="355695"   >VITORIA BRASIL</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355700" value="355700"   >VOTORANTIM</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355710" value="355710"   >VOTUPORANGA</option>
+			
+		
+
+    
+		<!--  confirma se possui apenas 1 item na lista para manter selecionado -->
+		
+			
+			
+				<option id="ibge_codigo_355715" value="355715"   >ZACARIAS</option>
+			
+		
+
+    
+</select>
+
+	<br />
+
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  campos obrigatórios -->
+
+
+	
+
+<!--  disponível somente para leitura -->
+
+<!--  TIPO cpf -->
+
+<!--  TIPO rg -->
+
+<!--  TIPO cep -->
+
+<!--  TIPO cnpj -->
+
+<!--  TIPO fone -->
+
+<!--  TIPO numerico -->
+
+<!--  TIPO numerico2 -->
+
+<!--  TIPO email -->
+
+<!--  TIPO temperatura -->
+
+<!--  TIPO moeda -->
+
+<!--  TIPO moeda8 -->
+
+<!--  TIPO ufesp -->
+
+<!--  TIPO peso -->
+
+<!--  TIPO altura -->
+
+<!--  tamanho padrão -->
+
+	
+
+
+	
+		
+		
+			<label for="cevsSolicitacaoIdentificacaoestabelecimentoDadosenderecologradouro" id="_cevsSolicitacaoIdentificacaoestabelecimentoDadosenderecologradouro" class="">Logradouro:</label>
+		
+		
+		<!-- Situação -->
+		
+			<input style=";;;" autocomplete="" tipo="" type="text" name="cevsSolicitacaoIdentificacao.estabelecimentoDados.endereco.logradouro" id="cevsSolicitacaoIdentificacaoestabelecimentoDadosenderecologradouro"   value=""
+				class="    inputuppercase" size="40" maxlength="100"  />&nbsp;
+		
+	
+	
+
+
+	<br />
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<!--  campos obrigatórios -->
+
+	
+	
+
+
+
+
+<label for="Código de segurança:" id="_textoCaptcha"
+	class="obrigatorio">
+Digite o texto da imagem:*
+</label>
+<span style="float: left;width:420px;text-align: left;padding-top: 3px;padding-left:0px;">
+	<input style="text-transform:uppercase" autocomplete="off" type="text" name="textoCaptcha" id="textoCaptcha" value="" class="obrigatorio" size="7" maxlength="4" />&nbsp;&nbsp;
+<span style="margin-left:180px;margin-top:-20px;display:block;width:220px;text-align:center;">
+	<span style="display:block;height:70px;" class="imgGeraCaptcha" id="/sivisa">
+	<img src="/sivisa/jcaptcha" />
+	</span>
+	<span style="cursor:pointer;display:block;">
+		<a class="linkGeraCaptcha">gerar outra imagem</a>
+	</span>
+</span>
+</span>
+
+	<br />
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  define uam valor padrão para o "name", evita erro "Invalid chunk '=' ignored." -->
+
+
+<!--  define o TIPO padrão -->
+
+
+<!--  verfica se haverá URL -->
+
+
+
+	<span>
+		<input class="botao_hidden " type="hidden" name="pesquisa" value="1" id="pesquisa"   />	
+	</span> 
+
+
+ 
+
+	
+	</div>
+</div>
+
+	
+
+ 
+
+
+
+
+
+
+
+<!--  define se o separador será exibido -->
+
+	
+
+
+<!--  define alinhamento -->
+
+	
+
+
+<div class="iniAcao separador" style="text-align:center;">
+
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  define uam valor padrão para o "name", evita erro "Invalid chunk '=' ignored." -->
+
+	
+
+
+<!--  define o TIPO padrão -->
+
+
+<!--  verfica se haverá URL -->
+
+
+
+	<span>
+		<input class="botao_pesquisar " type="submit" name="IdNameSemValor" value="" id="IdNameSemValor"   />	
+	</span> 
+
+
+ 
+
+	</div>
+
+		</fieldset>
+</form>
+
+	
+
+ 
+
+
+
+
+
+
+<div class="lbInstrucoes">É necessario o preenchimento ao menos de um campo para realizar a pesquisa. </div>
+
+	
+
+ 
+
+
+
+
+
+
+<div class="lbInstrucoes">Não é possível pesquisar por CPF e CNPJ ao mesmo tempo.</div>
+
+	
+	
+
+ 
+
+
+
+
+
+
+
+<!--  define se o separador será exibido -->
+
+	
+
+
+<!--  define alinhamento -->
+
+
+<div class="iniAcao separador" style="text-align:left;">
+
+	</div>
+
+
+
+	</div>
+	
+	<!--  campos obrigatÃ³rios -->
+	
+		
+		<div id="rodape">
+			<span class="copyright">CSEG / GIS / CPS - Secretaria de Estado da Saude de Sao Paulo (SESSP). c 2009-2024 Direitos reservados</span>
+		</div>
+	<br/>
+	
+</div>
+
+	
+<!-- nome da pÃ¡gina jsp: /cidadao/cidadaoLicenca.consultaEstabelecimento.jsp-->
+<!-- Ãºltima url chamada: null-->   
+</body>
+</html>
+
+

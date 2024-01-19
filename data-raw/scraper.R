@@ -1,3 +1,6 @@
+
+# preparacao --------------------------------------------------------------
+
 url <- "https://sivisa.saude.sp.gov.br/sivisa/cidadao/"
 
 servicos <- list(
@@ -17,6 +20,13 @@ servicos <- list(
 
 url_estabelecimento <- paste0(url, servicos$endpoint[servicos$descricao == "Consulta Estabelecimento"])
 
+url_captcha <- "https://sivisa.saude.sp.gov.br/sivisa/jcaptcha"
+
+model <- captcha::captcha_fit_model(dir = "data-raw/captcha")
+
+# body --------------------------------------------------------------------
+
+# captcha
 r <- httr2::request(url_estabelecimento) |>
   httr2::req_perform()
 
@@ -25,24 +35,21 @@ jsessionid <- r$headers$`Set-Cookie` |>
 
 url_referer <- paste0(url_estabelecimento, ";jsession=", jsessionid)
 
-url_captcha <- "https://sivisa.saude.sp.gov.br/sivisa/jcaptcha"
-
-path_captcha <- "data-raw/captcha/captcha.jpeg"
+path_captcha <- "data-raw/img/captcha.jpeg"
 
 url_captcha |>
   httr2::request() |>
   httr2::req_headers('Referer' = url_referer) |>
-  httr2::req_perform(path =path_captcha)
+  httr2::req_perform(path = path_captcha)
 
 captcha <- captcha::read_captcha(path_captcha)
 plot(captcha)
-model <- captcha::captcha_load_model("tjrs")
-captcha::decrypt(captcha, model)
+# model <- captcha::captcha_fit_model(dir = "data-raw/captcha")
+captcha_answer <- captcha::decrypt(captcha, model)
 
-# para exemplo
+# cnpj
 cnpj <- "11.244.733/0001-98"
 municipio_ibge <- "350320"
-captcha <- "xs9l"
 
 body <- list(
   "cevsSolicitacaoIdentificacao.estabelecimentoDados.estabelecimento.cpf" = "",
@@ -51,15 +58,18 @@ body <- list(
   "cevsSolicitacaoIdentificacao.estabelecimentoDados.nomeFantasia" = "",
   "ibge_codigo" = municipio_ibge,
   "cevsSolicitacaoIdentificacao.estabelecimentoDados.endereco.logradouro" = "",
-  "textoCaptcha" = captcha,
+  "textoCaptcha" = captcha_answer,
   "pesquisa" = "1",
   "IdNameSemValor" = ""
 )
 
-path <- "data-raw/html"
+path_html <- "data-raw/html"
+
+file_html <- fs::path(path_html, jsessionid, ext = "html")
 
 r <- httr::POST(
-  url = url_estabelecimento,
+  url = url_referer,
   body = body,
-  httr::write_disk(path, overwrite = TRUE)
+  httr::write_disk(file_html, overwrite = TRUE)
 )
+
