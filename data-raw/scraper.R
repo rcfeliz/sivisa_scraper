@@ -17,12 +17,27 @@ servicos <- list(
 
 url_estabelecimento <- paste0(url, servicos$endpoint[servicos$descricao == "Consulta Estabelecimento"])
 
-r <- httr::GET(url_estabelecimento)
+r <- httr2::request(url_estabelecimento) |>
+  httr2::req_perform()
 
-r |>
-  xml2::read_html() |>
-  xml2::xml_find_all("//img") |>
-  xml2::xml_attr("src")
+jsessionid <- r$headers$`Set-Cookie` |>
+  stringr::str_extract("\\w+(?=;)")
+
+url_referer <- paste0(url_estabelecimento, ";jsession=", jsessionid)
+
+url_captcha <- "https://sivisa.saude.sp.gov.br/sivisa/jcaptcha"
+
+path_captcha <- "data-raw/captcha/captcha.jpeg"
+
+url_captcha |>
+  httr2::request() |>
+  httr2::req_headers('Referer' = url_referer) |>
+  httr2::req_perform(path =path_captcha)
+
+captcha <- captcha::read_captcha(path_captcha)
+plot(captcha)
+model <- captcha::captcha_load_model("tjrs")
+captcha::decrypt(captcha, model)
 
 # para exemplo
 cnpj <- "11.244.733/0001-98"
